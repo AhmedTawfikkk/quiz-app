@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/Quiz/quiz.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="timer-container">
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+        <p class="time-left"></p>
+      </div>
+      
+      <div class="quiz-content">
+        <div class="quiz-main">
+          <h1 class="question"></h1>
+
+          <form class="answers" >
+            <label class="answer">
+              <input type="radio" name="answer" />
+              <div class="left">
+                <span class="letter">A</span>
+                <span class="text"></span>
+              </div>
+              <span class="check">✔</span>
+            </label>
+
+            <label class="answer">
+              <input type="radio" name="answer" />
+              <div class="left">
+                <span class="letter">B</span>
+                <span class="text"></span>
+              </div>
+              <span class="check">✔</span>
+            </label>
+
+            <label class="answer">
+              <input type="radio" name="answer" />
+              <div class="left">
+                <span class="letter">C</span>
+                <span class="text"></span>
+              </div>
+              <span class="check">✔</span>
+            </label>
+
+            <label class="answer">
+              <input type="radio" name="answer" />
+              <div class="left">
+                <span class="letter">D</span>
+                <span class="text"></span>
+              </div>
+              <span class="check">✔</span>
+            </label>
+
+            <div class="buttons">
+              <button class="btn previous" type="button" onclick="previous()">
+                Previous
+              </button>
+              <button class="btn next" type="button" onclick="next()">
+                Next
+              </button>
+              <button class="btn mark" type="button" onclick="mark()">
+                Mark Question
+              </button>
+              <button class="btn submit" type="button">Submit Exam</button>
+            </div>
+          </form>
+        </div>
+        <!-- quiz-main ends here -->
+
+        <div class="quiz-sidebar">
+          <div class="question-list">
+            <h4>Quiz Questions List</h4>
+            <ul>
+              <li>Quiz question 1</li>
+              <li>Quiz question 2</li>
+              <li>Quiz question 3</li>
+              <li>Quiz question 4</li>
+              <li>Quiz question 5</li>
+              <li>Quiz question 6</li>
+              <li>Quiz question 7</li>
+              <li>Quiz question 8</li>
+              <li>Quiz question 9</li>
+              <li>Quiz question 10</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="quiz.js"></script>
+</html>
