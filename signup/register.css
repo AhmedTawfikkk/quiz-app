@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+*
+{
+     font-family: 'Montserrat', sans-serif;
+}
+body{
+   height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+     
+     background: linear-gradient(to right, #d8d8dd, #78787983);
+}
+.container
+{
+      background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
+    width: 1110px;
+   border-radius: 20px;
+   overflow: hidden;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+}
+.signUp-container
+{
+   
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #512da8;
+    width: 50%;
+    height: 100%;
+    border-radius: 150px 10px 10px 150px;
+    text-align: center;
+   color: white;
+}
+.login-container
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+  
+}
+input{
+    margin-top: 20px;
+    width: 350px;
+    height: 30px;
+    border-radius: 10px;
+     background-color: #eee;
+    border:none;
+    padding: 10px 15px;
+}
+.form-group a{
+     color: #333;
+    font-size: 13px;
+    text-decoration: none;
+    margin: 25px 0 ;
+    display: inline-block;  
+    
+}
+.signIn-btn
+{
+    background-color: #512da8;
+    color: #fff;
+    font-size: 12px;
+    padding: 11px 30px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    margin: 10px 20px 20px;
+}
+
+.signUp-btn
+{
+    background-color: transparent;
+    font-size: 12px;
+    padding: 10px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+    border: 1px solid #fff;
+    color: white;
+}
+
+.content
+{
+    margin:20px 0;
+}
+.content p
+{
+    max-width: 400px;
+    margin-bottom: 30px;
+}
+.social-icons a{
+    border: 1px solid #ccc;
+    border-radius: 20%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3px;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+}
+.container span{
+    font-size: 12px;
+    
+}
+.social-icons{
+    margin: 20px 0;
+}
+.signUp-btn:hover{
+    background-color: #5f30cb;
+}
+.signIn-btn:hover
+{
+     background-color: #5f30cb;
+}
+.error {
+  color: red;
+  font-size: 13px;
+  margin-top: 6px;
+  display: block;
+}
+.acc{
+     color: #5f30cb;
+   
+}
+#h1{
+ margin-top:40px;
+
+
+}
