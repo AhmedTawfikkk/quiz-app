@@ -33,21 +33,6 @@ function validateFnameInput() {
   }
 }
 
-function validateLnameInput() {
-  var input = document.getElementById("lname");
-  var val = input.value.trim();
-
-  if (val === "") {
-    showMessage(input, "Last name is required");
-    return false;
-  } else if (!nameReg.test(val)) {
-    showMessage(input, "Enter letters only");
-    return false;
-  } else {
-    clearMessage(input);
-    return true;
-  }
-}
 
 function validateEmailInput() {
   var input = document.getElementById("email");
@@ -100,14 +85,12 @@ function validateConfirmInput() {
 
 document.addEventListener("DOMContentLoaded", function () {
   var fname = document.getElementById("fname");
-  var lname = document.getElementById("lname");
   var email = document.getElementById("email");
   var pass = document.getElementById("pass");
   var confirm = document.getElementById("confirm");
   var form = document.getElementById("registerForm");
 
   fname.addEventListener("input", validateFnameInput);
-  lname.addEventListener("input", validateLnameInput);
   email.addEventListener("input", validateEmailInput);
   pass.addEventListener("input", function () {
     validatePassInput();
@@ -120,21 +103,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var ok = true;
     if (!validateFnameInput()) ok = false;
-    if (!validateLnameInput()) ok = false;
     if (!validateEmailInput()) ok = false;
     if (!validatePassInput()) ok = false;
     if (!validateConfirmInput()) ok = false;
     if (!ok) return;
 
     var firstName = fname.value;
-    var lastName = lname.value;
     var emailVal = email.value;
     var passwordVal = pass.value;
-    var fullName = firstName + " " + lastName;
 
     localStorage.setItem("userFname", firstName);
-    localStorage.setItem("userLname", lastName);
-    localStorage.setItem("userFullName", fullName);
     localStorage.setItem("userEmail", emailVal);
     localStorage.setItem("userPassword", passwordVal);
 
