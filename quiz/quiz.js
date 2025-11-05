@@ -234,7 +234,7 @@ var timer = setInterval(function() {
 
   // If time runs out → end quiz and redirect to timeout page
   if (totalTime <= 0) {
-    endQuiz(true, "/TimeOut/timeout.html");
+    endQuiz(true, "/timeOut/timeOut.html");
   }
 
 }, 1000); // run every 1 second

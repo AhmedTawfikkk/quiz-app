@@ -61,7 +61,7 @@
             localStorage.setItem("userName", fullName);
 
            
-            window.location.href = "quiz.html";
+            window.location.href = "../quiz/quiz.html";
 
           } else {
             document.getElementById("passMessage").textContent =
