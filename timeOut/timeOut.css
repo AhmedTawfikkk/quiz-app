@@ -14,20 +14,20 @@ body {
   text-align: center;
   padding: 40px 20px;
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
 }
 
 
 
 h1 {
-  color: #061947;
+  color: black;
   font-size: 32px;
   /* margin-bottom: 10px; */
 }
 
 p {
-  color: #666;
-  margin-bottom: 25px;
+  color: red;
+  /* margin-bottom: 25px; */
 }
  img{
   width: 300px;
@@ -37,8 +37,7 @@ button {
   color: white;
   border: none;
   padding: 10px 25px;
- margin-left: 30px;
- margin-top: 20px;
+ margin: 20px;
   border-radius: 8px;
   cursor: pointer;
   font-size: 15px;
