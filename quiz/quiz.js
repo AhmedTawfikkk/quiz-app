@@ -102,7 +102,11 @@ var text = document.getElementsByClassName("text"); // collection of span/divs s
 var current = 0; // index of current question
 var userAnswers = new Array(quizData.length).fill(null); // store user’s chosen answers and it is array every item have answer from 0 to 3
 var questionItems = document.querySelectorAll(".question-list li");  // sidebar question numbers (li elements)
-var marks = 0; // total score (currently unused)
+var marks = 0; // total score 
+var timerContainer= document.querySelector(".timer-container");
+var questionNo= document.createElement("h2");
+timerContainer.prepend(questionNo);
+
 
 shuffle(quizData); // Randomize the question order before starting
 
@@ -126,6 +130,12 @@ function loadQuestion() {
   text[1].textContent = quizData[current].b;
   text[2].textContent = quizData[current].c;
   text[3].textContent = quizData[current].d;
+
+
+  questionNo.textContent="Question "+ (current+1) +" Of 10";
+  
+
+
 
   // Get all input radio buttons
   var answers = document.querySelectorAll('input');
@@ -214,9 +224,10 @@ document.querySelector(".submit").addEventListener("click", () => {
   endQuiz();
 });
 // ---------------- TIMER SECTION ---------------- //
-var totalTime = 30; // total time in seconds
+var totalTime = 900; // total time in seconds
 var timeLeft = document.querySelector(".time-left"); // text showing remaining time
 var progressBar = document.querySelector(".progress"); // progress bar element
+  timeLeft.textContent = "Time Left : " + 15 + ":00" ;
 
 // Set a timer that counts down every second
 var timer = setInterval(function() {
@@ -226,11 +237,16 @@ var timer = setInterval(function() {
   var minutes = Math.floor(totalTime / 60);
   var seconds = totalTime % 60;
 
+  if(seconds <10)
+  {
+    seconds = "0"+seconds;
+  }
+
   // Update displayed time
   timeLeft.textContent = "Time Left : " + minutes + ":" + seconds;
 
   // Update progress bar width based on remaining time
-  progressBar.style.width = (totalTime / 30) * 100 + "%";
+  progressBar.style.width = (totalTime / 900) * 100 + "%";
 
   // If time runs out → end quiz and redirect to timeout page
   if (totalTime <= 0) {

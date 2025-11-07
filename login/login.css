@@ -74,6 +74,7 @@ input{
     border-radius: 8px;
     border: none;
     font-weight: 600;
+    cursor: pointer;
     
 }
 
@@ -86,6 +87,7 @@ input{
     font-weight: 600;
     border: 1px solid #fff;
     color: white;
+    cursor: pointer;
 }
 
 .content
@@ -117,11 +119,11 @@ input{
     margin: 20px 0;
 }
 .signUp-btn:hover{
-    background-color: #2d1fd1;
+    background-color: #1a0fc4;
 }
 .signIn-btn:hover
 {
-     background-color: #2d1fd1;
+     background-color: #1a0fc4;
 }
 .error {
   color: red;
