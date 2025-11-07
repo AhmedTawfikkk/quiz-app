@@ -2,21 +2,20 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  background: #f3f5f8;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-      background: linear-gradient(135deg, #fffdff, #c6e0f6);
+   background: linear-gradient(to right, #d8d8dd, #d8d8dd);
 
 }
 
 
 .card {
   display: flex;
-  width: 850px;
-  height: 450px;
-         
+  width: 900px;
+  height: 500px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
  background-color: white;
   border-radius: 20px;
   overflow: hidden;

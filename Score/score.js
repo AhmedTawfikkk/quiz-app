@@ -1,4 +1,4 @@
-var name = localStorage.getItem("userName");
+var name = localStorage.getItem("userFname");
 var correct = parseInt(localStorage.getItem("correctAnswers"));
 var total = parseInt(localStorage.getItem("totalQuestions"));
 
@@ -22,12 +22,14 @@ if (correct >= 5) {
   message.style.color = "#0a8a0a";
   rightDiv.style.backgroundImage = "url('suc.jpeg')";
   rightDiv.style.marginRight = "70px";
-  rightDiv.style.height="100%";
+  rightDiv.style.height="450px";
 } else {
   message.textContent = `Sorry ${ name } You didn’t pass the quiz , give it another try!`;
   message.style.color = "red";
   rightDiv.style.backgroundImage = "url('fail43-removebg-preview.png')";
- rightDiv.style.width = "100%";
+   rightDiv.style.height="450px";
+    rightDiv.style.marginRight = "70px";
+ 
 }
 
 var retryBtn = document.getElementById("retryBtn");
