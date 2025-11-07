@@ -259,26 +259,47 @@ var timer = setInterval(function() {
 // Function to end the quiz
 // If isTimeout = true → redirect to timeout.html
 // Otherwise → redirect to score.html
-function endQuiz(isTimeout = false, redirectPage = "/Score/score.html") {
-  clearInterval(timer); // stop timer
-  userAnswers.forEach((user_answer,index)=> 
-  {
-    if (user_answer === null) return;
+// function endQuiz(isTimeout = false, redirectPage = "/Score/score.html") {
+//   clearInterval(timer); // stop timer
+//   userAnswers.forEach((user_answer,index)=> 
+//   {
+//     if (user_answer === null) return;
 
-    if( user_answer ==  quizData[index].correct)
-    {
-      marks+=10;
-    }
-  });
-  localStorage.setItem("marks", marks);
+//     if( user_answer ==  quizData[index].correct)
+//     {
+//       marks+=10;
+//     }
+//   });
+//   localStorage.setItem("marks", marks);
   
 
 
-  if (isTimeout) {
-    window.location.href = redirectPage;
-  } else {
-    window.location.href = redirectPage;
-  }
+//   if (isTimeout) {
+//     window.location.href = redirectPage;
+//   } else {
+//     window.location.href = redirectPage;
+//   }
+// }
+function endQuiz(isTimeout = false, redirectPage = "/Score/score.html") {
+  clearInterval(timer); 
+  var correctAnswers = 0;
+
+  userAnswers.forEach((user_answer, index) => {
+    if (user_answer === null) return;
+    if (user_answer == quizData[index].correct) {
+      correctAnswers++;
+    }
+  });
+
+  localStorage.setItem("correctAnswers", correctAnswers);
+  localStorage.setItem("totalQuestions", quizData.length);
+  localStorage.setItem(
+    "userName",
+    localStorage.getItem("userName") || "Unknown"
+  );
+
+
+  window.location.href = redirectPage;
 }
 
 

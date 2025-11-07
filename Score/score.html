@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -6,29 +5,30 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Final Score</title>
   <link rel="stylesheet" href="score.css">
-  
 </head>
 <body>
-  <div class="container">
+  <div class="card">
     <div class="left">
       <h1>Your Final Score</h1>
+
       <div class="score-box">
-  <div class="score-rect" id="score">0 / 10</div>
-</div>
+        <div class="score-rect" id="score">0 / 10</div>
+      </div>
+
+      <div id="message"></div>
 
       <div class="info">
         <p><strong>Name:</strong> <span id="userName"></span></p>
         <p><strong>Correct Answers:</strong> <span id="correctAnswers"></span></p>
         <p><strong>Total Questions:</strong> <span id="totalQuestions"></span></p>
       </div>
-      <button onclick="window.location.href='/Quiz/quiz.html'">Try Again</button>
+
+      <button id="retryBtn">Try Again</button>
     </div>
 
-    <div class="right">
-      <img src="lap.jpg" alt="score image">
-    </div>
+    <div class="right" id="resultBackground"></div>
   </div>
-<script src="score.js"></script>
-  
+
+  <script src="score.js"></script>
 </body>
 </html>
