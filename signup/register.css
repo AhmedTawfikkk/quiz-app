@@ -31,7 +31,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1504b2;
+    background-color: #0D47A1;
     width: 50%;
     height: 100%;
     border-radius: 150px 10px 10px 150px;
@@ -65,9 +65,9 @@ input{
     display: inline-block;  
     
 }
-.signIn-btn
+.signUp-btn
 {
-    background-color: #1504b2;
+    background-color: #0D47A1;
     color: #fff;
     font-size: 12px;
     padding: 11px 30px;
@@ -78,7 +78,7 @@ input{
     cursor: pointer;
 }
 
-.signUp-btn
+.signIn-btn
 {
     background-color: transparent;
     font-size: 12px;
@@ -118,11 +118,11 @@ input{
     margin: 20px 0;
 }
 .signUp-btn:hover{
-    background-color: #1a0fc4;
+    background-color: rgba(13, 71, 161, 0.85);
 }
 .signIn-btn:hover
 {
-     background-color: #1a0fc4;
+     background-color: #2A5BBF;
 }
 .error {
   color: red;
@@ -131,7 +131,7 @@ input{
   display: block;
 }
 .acc{
-     color: #1504b2;
+     color: #0D47A1;
    
 }
 #h1{

@@ -33,7 +33,7 @@ p {
   width: 300px;
  }
 button {
-  background: #0c0477;
+  background: #0D47A1;
   color: white;
   border: none;
   padding: 10px 25px;
@@ -47,5 +47,5 @@ button {
 }
 
 button:hover {
-  background: #1b2e87;
+   background-color: rgba(13, 71, 161, 0.85);
 }

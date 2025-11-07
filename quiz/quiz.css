@@ -72,7 +72,7 @@ input
   display: flex;              /* center the mark */
   align-items: center;
   justify-content: center;
-  background-color: #1504b2;  /* modern green */
+  background-color: #0D47A1;  /* modern green */
   color: white;
   font-size: 14px;
   border-radius: 50%;
@@ -84,7 +84,7 @@ input
 
 button
 {
-    background-color: #1504b2;
+    background-color: #0D47A1;
     color: #fff;
     font-size: 12px;
     padding: 11px 28px;
@@ -135,26 +135,26 @@ li
     cursor: pointer;
 }
 .answer:hover {
-  border-color: #1504b2;
+  border-color: #0D47A1;
   cursor: pointer;
 }
 button:hover {
-  background: #1a0fc4;
+ background-color: rgba(13, 71, 161, 0.85);
 }
 input:checked ~.check {
   opacity: 1; 
 }
 .answer:has(input:checked)
 {
-  border-color: #1504b2;
+  border-color: #0D47A1;
 }
 .question-list li.answered {
-  background-color: #1504b2; 
+  background-color: #0D47A1; 
   color: white;
   transition: 0.3s;
 }
 .question-list li.marked {
-  background-color: #f59e0b; 
+  background-color: #FFA000; 
   color: #fff;
   transition: 0.3s;
 }
@@ -177,11 +177,11 @@ input:checked ~.check {
 .progress {
   width: 100%; 
   height: 100%;
-  background-color: #1504b2; 
+  background-color: #0D47A1; 
   transition: width 1s linear;
 }
 .time-left {
   font-weight: bold;
-  color: #1504b2;
+  color: #0D47A1;
   font-size: 18px;
 }
