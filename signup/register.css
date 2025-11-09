@@ -76,6 +76,7 @@ input{
     font-weight: 600;
     margin: 10px 20px 20px;
     cursor: pointer;
+     transition: 0.3s;
 }
 
 .signIn-btn
@@ -88,6 +89,7 @@ input{
     border: 1px solid #fff;
     color: white;
     cursor: pointer;
+     transition: 0.3s;
 }
 
 .content

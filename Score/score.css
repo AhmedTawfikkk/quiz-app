@@ -26,7 +26,7 @@ body {
 
 .left {
   flex: 1;
-  padding: 50px;
+  padding: 50px ;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45,6 +45,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 15px;
+  padding-right: 28px;
 }
 
 .score-rect {
@@ -63,7 +64,7 @@ body {
 #message {
   font-size: 1.4rem;
   font-weight: bold;
-  margin: 15px 0;
+  margin: 15px 0 15px 8px;
   text-align: center;
 }
 
@@ -81,7 +82,8 @@ body {
 
 button {
   margin-top: 25px;
-  padding: 12px 40px;
+  margin-right: 24px;
+  padding: 12px 35px;
   background: #0D47A1;
   color: #fff;
   border: none;
@@ -99,8 +101,13 @@ button:hover {
 
 .right {
   flex: 1;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  
+  display: flex;              
+  justify-content: center;
+  align-items: center;
+}
+.right img {
+  max-width: 105%;        
+  height: 90%;           
+  object-fit: cover;      
+  padding-right: 85px;  
 }

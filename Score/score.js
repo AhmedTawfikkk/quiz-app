@@ -16,20 +16,16 @@ document.getElementById("score").textContent = correct + " / " + total;
 
 var message = document.getElementById("message");
 var rightDiv = document.getElementById("resultBackground");
+var resultImage = document.getElementById("resultImage");
 
-if (correct >= 5) {
-  message.textContent = ` Congratulations ${name || "student"}! You passed!`;
+if (correct >= 1) {
+  message.textContent = `Congratulations ${name || "student"}! You passed this quiz Successfully!`;
   message.style.color = "#0a8a0a";
-  rightDiv.style.backgroundImage = "url('suc.jpeg')";
-  rightDiv.style.marginRight = "70px";
-  rightDiv.style.height="450px";
+   resultImage.src = "suc.jpeg";
 } else {
   message.textContent = `Sorry ${ name } You didn’t pass the quiz , give it another try!`;
   message.style.color = "red";
-  rightDiv.style.backgroundImage = "url('fail43-removebg-preview.png')";
-   rightDiv.style.height="450px";
-    rightDiv.style.marginRight = "70px";
- 
+  resultImage.src = "fail43-removebg-preview.png";
 }
 
 var retryBtn = document.getElementById("retryBtn");
