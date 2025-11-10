@@ -18,7 +18,7 @@ var message = document.getElementById("message");
 var rightDiv = document.getElementById("resultBackground");
 var resultImage = document.getElementById("resultImage");
 
-if (correct >= 1) {
+if (correct >= 6) {
   message.textContent = `Congratulations ${name || "student"}! You passed this quiz Successfully!`;
   message.style.color = "#0a8a0a";
    resultImage.src = "suc.jpeg";

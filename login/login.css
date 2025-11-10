@@ -9,7 +9,7 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-     
+       /* transition: opacity 0.5s ease; */
      background: linear-gradient(to right, #d8d8dd, #d8d8dd);
 }
 .container
@@ -34,7 +34,7 @@ body{
     background-color: #0D47A1;
     width: 50%;
     height: 100%;
-    border-radius: 150px 10px 10px 150px;
+    border-radius: 10px 150px 150px 10px;
     text-align: center;
    color: white;
 }
@@ -133,3 +133,6 @@ input{
   margin-top: 6px;
   display: block;
 }
+/* body.fade-out {
+  opacity: 0;
+} */

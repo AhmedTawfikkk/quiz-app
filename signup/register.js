@@ -33,7 +33,6 @@ function validateFnameInput() {
   }
 }
 
-
 function validateEmailInput() {
   var input = document.getElementById("email");
   var val = input.value.trim();
