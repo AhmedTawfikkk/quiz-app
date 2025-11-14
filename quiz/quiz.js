@@ -83,6 +83,18 @@ var quizData = [
   },
 ];
 
+// Function to shuffle the quiz questions randomly
+function shuffle(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    // Pick a random index
+    let j = Math.floor(Math.random() * (i + 1));
+    // Swap current element with the randomly chosen one
+    var temp = array[i];
+    array[i] = array[j];
+    array[j] = temp;
+  }
+}
+
 
 // Selecting important DOM elements
 var question = document.querySelector(".question"); // h1 tag where question text will appear
