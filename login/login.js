@@ -51,10 +51,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var storedEmail = localStorage.getItem("userEmail");
     var storedPass = localStorage.getItem("userPassword");
-    var fullName = localStorage.getItem("userFullName");
-
+    
     if (emailInput.value === storedEmail && passInput.value === storedPass) {
-      localStorage.setItem("userName", fullName);
 
       window.location.href = "../quiz/quiz.html";
     } else {
