@@ -1,2 +1,2 @@
 
-document.location.replace("/Home/home.html");
+document.location.replace("Home/home.html");
