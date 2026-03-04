@@ -280,7 +280,7 @@ var timer = setInterval(function() {
 //     window.location.href = redirectPage;
 //   }
 // }
-function endQuiz(isTimeout = false, redirectPage = "/Score/score.html") {
+function endQuiz(isTimeout = false, redirectPage = "../Score/score.html") {
   clearInterval(timer); 
   var correctAnswers = 0;
 
